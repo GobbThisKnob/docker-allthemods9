@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y curl unzip && \
 
 COPY launch.sh /launch.sh
 RUN chmod +x /launch.sh
-RUN sudo -i
-USER minecraft
+
+USER root
 
 VOLUME /data
 WORKDIR /data
